@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spring Boot ajax example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/application.css"/>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Users</h1>
+    <button id="showUsers" class="btn btn-primary btn-lg">Display all Users</button>
+</div>
+
+<table id="tableUsers" class="d-none">
+    <tbody>
+    </tbody>
+</table>
+<br/>
+<br/>
+<br/>
+
+<div class="container">
+    <h1>Add New User</h1>
+    <br/>
+    <label>Name:</label><input id="name" type="text"/>
+    <br/>
+    <label>Salary:</label><input id="salary" type="text"/>
+    <br/>
+    <button id="addUser">Add User</button>
+    <br/>
+    <br/>
+    <br/>
+    <h1>Find User</h1>
+    <label>Enter User ID:</label><input id="userID" type="text"/>
+    <button id="findUser">Find User</button>
+
+    <div id="display" class="d-none">
+    <button id="deleteUser">Delete User</button>
+    <table id="tableUser">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Salary</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <button id="updateUser">Update User</button>
+    </div>
+</div>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/application.js"></script>
+
+</body>
+</html>
